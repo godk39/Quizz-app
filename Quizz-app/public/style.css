@@ -1,0 +1,333 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+/*Common font*/
+
+body{
+    font-family: 'Proxima Nova','Helvetica',
+    'Arial',sans-serif;
+    font-size: 18px;
+    color: #222222;
+    margin-left: 25%;
+    margin-right: 28.5%;
+}
+
+
+
+/* Header*/
+
+header{
+    height: 80px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+}
+
+#course-name{
+    font-family: "Helvetica", sans-serif;
+    font-size: 32px;
+    margin-top: 40px;
+    
+    align-self: flex-start;
+    color: #ee3322;
+}
+
+
+.mern-circle{
+   
+    font-weight: bold;
+    align-self: flex-end;
+    margin-top: 40px;
+}
+
+.mern{
+    height: 50px;
+    width: 50px;
+    transform: rotate(330deg);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    border-radius: 100%;
+    background: #ffee00;
+}
+
+
+/*Quiz name*/
+
+#quiz-name{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    width : 100%;
+    height: 425px;
+    
+    display: flex;
+    
+}
+
+
+#name{
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin','Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    margin: auto;
+    max-width: 75%;
+    
+}
+
+#author{
+  /* min-width: 700px;
+   max-width: 700px;*/
+
+   text-align: center;
+   font-size: 14px;
+   vertical-align: middle;
+   margin-top: 18px;
+}
+
+
+/*Introduction*/
+
+#introduction{
+   
+    width: 100%;
+}
+
+#introduction div{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/*start quiz button */
+
+#start-quiz{
+    background-color: rgb(231, 227, 227);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blue-buttons{
+    background-color: #2196F3;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: auto;
+    margin-top: 36px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: hidden;
+
+}
+
+.blue-buttons:hover{
+    background-color: #0d8bf2;
+}
+
+
+/*attempt quiz and submit*/
+
+/* #attempt-quiz{
+    display: none;
+} */
+
+.submit-box{
+    background-color:  rgb(231, 227, 227);
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.green-buttons{
+    color: white;
+    background-color: #4CAF50;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.green-buttons:hover {
+    background-color: #46a049;
+}
+
+
+.question{margin-bottom: 30px; margin-top: 30px;}
+
+
+label{
+	display: inline-block;
+    width: 100%;
+    height: 35px;
+    
+    padding-top: 15px;
+    background-color: #f1f1f1;
+    border: white solid 1px;
+    cursor: pointer;
+}
+
+label > *{
+	padding-left: 15px;
+}
+
+
+.selected{
+	background-color: #ddd;
+}
+
+input{
+    margin-left: 10px;
+}
+
+
+label:hover{background-color:  #ddd;}
+
+.question-list{margin-top: 30px; font-weight: bold; font-size: 20px;}
+
+
+
+
+/*review quiz*/
+/* 
+#review-quiz{
+    display: none;
+} */
+
+.correct-ans{
+    background-color:rgba(0,0,0, 0.2) ;
+    font-size: 15px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    color: white;
+    padding-top: 5px;
+    position: relative;
+    margin-top:-5px;
+    float: right;
+    width: auto;
+    padding-right: 10px;
+}
+
+.your-ans{
+    background-color:rgba(0,0,0, 0.2) ;
+    font-size: 15px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    color: white;
+    padding-top: 5px;
+    position: relative;
+    margin-top:-5px;
+    float: right;
+    width: auto;
+    padding-right: 10px;
+}
+
+
+
+/*result view*/
+
+
+#result{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#score{
+    font-size: 24px;
+}
+
+#percentage{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.result-view{
+    margin-top: 20px;
+    background-color: rgb(231, 227, 227);
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: #dcdcdc solid 1px;
+}
+
+.try-again{
+    background-color: #2196F3;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    height: auto;
+    width: 100px;
+}
+
+/*some media screens*/
+@media (max-width:500px){ 
+   
+    .mern-circle{
+   
+        font-weight: bold;
+        align-self: flex-end;
+        margin-top: 40px;
+        font-size: 7px;
+    }
+    
+    .mern{
+        height: 25px;
+        width: 25px;
+        transform: rotate(330deg);
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 25px;
+        border-radius: 100%;
+        background: #ffee00;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:700px){ 
+    #course-name{
+        font-family: "Helvetica", sans-serif;
+        font-size: 15px;
+        margin-top: 40px;
+        
+        align-self: flex-start;
+        color: #ee3322;
+    }
+    
+   
+  
+    .correct-ans{
+        display: none;
+    }
+    
+    .your-ans{
+        display: none;
+    }
+    #name{
+        background-color: rgba(255, 255, 255, 0.9);
+        font-family: 'Pangolin','Trebuchet MS', cursive;
+        font-size: 30px;
+        color: black;
+        margin: auto;
+        max-width: 75%;
+        
+    }
+
+}
